@@ -1,29 +1,24 @@
 html {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-
 body {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-color: darkblue;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
 .container {
-    margin: auto;
-    background-color: white;
-    width: 50%;
-    align-items: center;
+  background-color: white;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+}
+.range{
+    width: 100%;
 }
 
-h2 {
+h2{
     text-align: center;
 }
-
-.range {
-    width: 70%;
-}
-
-
-
