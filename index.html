@@ -12,6 +12,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   </head>
   <body>
     <div class="container">
@@ -20,29 +26,51 @@
         <span class="input-group-text">$</span>
         <input
           type="text"
+          id="checkT"
           class="form-control"
           aria-label="Dollar amount (with dot and two decimal places)"
         />
       </div>
-      <div class="input-group mb-3 range" >
+      <div class="input-group mb-3 range">
         <span class="input-group-text">TIP:</span>
         <input
           type="range"
           class="form-range"
+          id="tip"
           value="19"
-          style="width: 80%;"
+          style="width: 80%"
           min="0"
           max="100"
           oninput="this.nextElementSibling.innerHTML = this.value+'%'"
         />
         <span class="input-group-text">19%</span>
-       
+      </div>
+      <hr class="hr" />
+      <h4>Results</h4>
+      <div class="input-group mb-3">
+        <span class="input-group-text">Tip Amount:</span>
+        <input
+          type="text"
+          class="form-control"
+          id="tipD"
+          aria-label="Dollar amount (with dot and two decimal places)"
+          placeholder="0"
+          readonly
+        />
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text">Total Bill:</span>
+        <input
+          type="text"
+          id="totalB"
+          class="form-control"
+          aria-label="Dollar amount (with dot and two decimal places)"
+          placeholder="0"
+          readonly
+        />
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./script.js"></script>
+
   </body>
 </html>
